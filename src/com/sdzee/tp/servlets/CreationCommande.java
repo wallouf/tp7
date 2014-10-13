@@ -20,7 +20,7 @@ import com.sdzee.tp.entities.Client;
 import com.sdzee.tp.entities.Commande;
 import com.sdzee.tp.forms.CreationCommandeForm;
 
-@WebServlet( urlPatterns = { "/creationCommande" }, initParams = @WebInitParam( name = "chemin", value = "/fichiers/images/" ) )
+@WebServlet( urlPatterns = { "/creationCommande" }, initParams = @WebInitParam( name = "chemin", value = "/Users/wallouf/Documents/DEV/fileTemp/" ) )
 @MultipartConfig( location = "/tmp", maxFileSize = 2 * 1024 * 1024, maxRequestSize = 10 * 1024 * 1024, fileSizeThreshold = 1024 * 1024 )
 public class CreationCommande extends HttpServlet {
     public static final String CHEMIN                = "chemin";

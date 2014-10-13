@@ -18,7 +18,7 @@ import com.sdzee.tp.dao.ClientDao;
 import com.sdzee.tp.entities.Client;
 import com.sdzee.tp.forms.CreationClientForm;
 
-@WebServlet( urlPatterns = { "/creationClient" }, initParams = @WebInitParam( name = "chemin", value = "/fichiers/images/" ) )
+@WebServlet( urlPatterns = { "/creationClient" }, initParams = @WebInitParam( name = "chemin", value = "/Users/wallouf/Documents/DEV/fileTemp/" ) )
 @MultipartConfig( location = "/tmp", maxFileSize = 2 * 1024 * 1024, maxRequestSize = 10 * 1024 * 1024, fileSizeThreshold = 1024 * 1024 )
 public class CreationClient extends HttpServlet {
     public static final String CHEMIN          = "chemin";
